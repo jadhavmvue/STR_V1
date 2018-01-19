@@ -1,0 +1,616 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D0CF821B-43DC-4AC3-ACD2-BAE42A4457D8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WindowsFormsApplication1</RootNamespace>
+    <AssemblyName>WindowsFormsApplication1</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\WindowsFormsApplication1.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\WindowsFormsApplication1.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputPath>bin\x64\Release\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Reporting.WinForms.v11.1.0.0.0\lib\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Reporting.WinForms.v11.1.0.0.0\lib\Microsoft.ReportViewer.ProcessingObjectModel.DLL</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Report.Viewer.11.0.0.0\lib\net\Microsoft.ReportViewer.WebForms.DLL</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Reporting.WinForms.v11.1.0.0.0\lib\Microsoft.ReportViewer.WinForms.DLL</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Reporting.WinForms.v11.1.0.0.0\lib\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.9.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\MySQL\MySQL Connector Net 6.9.8\Assemblies\v4.0\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data.Entity">
+      <HintPath>C:\Program Files\MySQL\MySQL Connector Net 6.9.8\Assemblies\v4.0\MySql.Data.Entity.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data.Entity.EF6">
+      <HintPath>C:\Program Files\MySQL\MySQL Connector Net 6.9.8\Assemblies\v4.0\MySql.Data.Entity.EF6.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Fabric.Plugin">
+      <HintPath>C:\Program Files\MySQL\MySQL Connector Net 6.9.8\Assemblies\v4.0\MySql.Fabric.Plugin.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Web">
+      <HintPath>C:\Program Files\MySQL\MySQL Connector Net 6.9.8\Assemblies\v4.0\MySql.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Backup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Backup.Designer.cs">
+      <DependentUpon>Backup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangeCompanyName.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangeCompanyName.designer.cs">
+      <DependentUpon>ChangeCompanyName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CloseFormValidation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CloseFormValidation.designer.cs">
+      <DependentUpon>CloseFormValidation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet28.cs">
+      <DependentUpon>DataSet28.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet28.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet28.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Edit_RPM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Edit_RPM.designer.cs">
+      <DependentUpon>Edit_RPM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form26.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form26.Designer.cs">
+      <DependentUpon>Form26.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form28.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form28.designer.cs">
+      <DependentUpon>form28.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form28_2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form28_2.designer.cs">
+      <DependentUpon>Form28_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form29_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form29_1.designer.cs">
+      <DependentUpon>Form29_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form29_2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form29_2.designer.cs">
+      <DependentUpon>Form29_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form29_3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form29_3.designer.cs">
+      <DependentUpon>Form29_3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form30.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form30.designer.cs">
+      <DependentUpon>Form30.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form31.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form31.designer.cs">
+      <DependentUpon>Form31.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form32_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form32_1.designer.cs">
+      <DependentUpon>Form32_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form32_2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form32_2.designer.cs">
+      <DependentUpon>Form32_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form4.designer.cs">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form28_1_B.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form5.Designer.cs">
+      <DependentUpon>Form28_1_B.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form51.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Form5.resx</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalClass.cs" />
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lg_123.cs">
+      <DependentUpon>lg_123.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="lg_123.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>lg_123.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="New Shift.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="New Shift.Designer.cs">
+      <DependentUpon>New Shift.cs</DependentUpon>
+    </Compile>
+    <Compile Include="operation28.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="operation28.Designer.cs">
+      <DependentUpon>operation28.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Opereation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Opereation.designer.cs">
+      <DependentUpon>Opereation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Opereation_Form28_2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Opereation_Form28_2.designer.cs">
+      <DependentUpon>Opereation_Form28_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Opereation_Form29_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Opereation_Form29_1.designer.cs">
+      <DependentUpon>Opereation_Form29_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Opereation_Form29_2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Opereation_Form29_2.designer.cs">
+      <DependentUpon>Opereation_Form29_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Opereation_Form29_3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Opereation_Form29_3.Designer.cs">
+      <DependentUpon>Opereation_Form29_3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Opereation_Form30.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Opereation_Form30.designer.cs">
+      <DependentUpon>Opereation_Form30.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Opereation_Form31.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Opereation_Form31.designer.cs">
+      <DependentUpon>Opereation_Form31.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Opereation_Form32_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Opereation_Form32_1.designer.cs">
+      <DependentUpon>Opereation_Form32_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Opereation_Form32_2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Opereation_Form32_2.designer.cs">
+      <DependentUpon>Opereation_Form32_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Opereation_RPM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Opereation_RPM.designer.cs">
+      <DependentUpon>Opereation_RPM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Opereation_Temp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Opereation_Temp.Designer.cs">
+      <DependentUpon>Opereation_Temp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="reporttemp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reporttemp.designer.cs">
+      <DependentUpon>reporttemp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reporttemp_new.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reporttemp_new.Designer.cs">
+      <DependentUpon>reporttemp_new.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RPMnew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RPMnew.Designer.cs">
+      <DependentUpon>RPMnew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RPM_Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RPM_Report.Designer.cs">
+      <DependentUpon>RPM_Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShiftChange.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShiftChange.designer.cs">
+      <DependentUpon>ShiftChange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ultimate_ele1DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ultimate_ele1DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ultimate_eleDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ultimate_eleDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ultimate_eleDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ultimate_eleDataSet1.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Backup.resx">
+      <DependentUpon>Backup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangeCompanyName.resx">
+      <DependentUpon>ChangeCompanyName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CloseFormValidation.resx">
+      <DependentUpon>CloseFormValidation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit_RPM.resx">
+      <DependentUpon>Edit_RPM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Excel_Import_Path.resx" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form26.resx">
+      <DependentUpon>Form26.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form28.resx">
+      <DependentUpon>form28.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form28_1_B.resx">
+      <DependentUpon>Form28_1_B.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form28_2.resx">
+      <DependentUpon>Form28_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form29_1.resx">
+      <DependentUpon>Form29_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form29_2.resx">
+      <DependentUpon>Form29_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form29_3.resx">
+      <DependentUpon>Form29_3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form30.resx">
+      <DependentUpon>Form30.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form31.resx">
+      <DependentUpon>Form31.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form32_1.resx">
+      <DependentUpon>Form32_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form32_2.resx">
+      <DependentUpon>Form32_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form4.resx">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form5.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Form51.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="New Shift.resx">
+      <DependentUpon>New Shift.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="operation28.resx">
+      <DependentUpon>operation28.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Opereation.resx">
+      <DependentUpon>Opereation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Opereation_Form28_2.resx">
+      <DependentUpon>Opereation_Form28_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Opereation_Form29_1.resx">
+      <DependentUpon>Opereation_Form29_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Opereation_Form29_2.resx">
+      <DependentUpon>Opereation_Form29_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Opereation_Form29_3.resx">
+      <DependentUpon>Opereation_Form29_3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Opereation_Form30.resx">
+      <DependentUpon>Opereation_Form30.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Opereation_Form31.resx">
+      <DependentUpon>Opereation_Form31.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Opereation_Form32_1.resx">
+      <DependentUpon>Opereation_Form32_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Opereation_Form32_2.resx">
+      <DependentUpon>Opereation_Form32_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Opereation_RPM.resx">
+      <DependentUpon>Opereation_RPM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Opereation_Temp.resx">
+      <DependentUpon>Opereation_Temp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Report1.rdlc" />
+    <EmbeddedResource Include="Report10.rdlc" />
+    <EmbeddedResource Include="Report11.rdlc" />
+    <EmbeddedResource Include="Report12 - Copy.rdlc" />
+    <EmbeddedResource Include="Report12.rdlc" />
+    <EmbeddedResource Include="Report13.rdlc" />
+    <EmbeddedResource Include="Report14.rdlc" />
+    <EmbeddedResource Include="Report15.rdlc" />
+    <EmbeddedResource Include="Report16.rdlc" />
+    <EmbeddedResource Include="Report2.rdlc" />
+    <EmbeddedResource Include="Report3.rdlc" />
+    <EmbeddedResource Include="Report4.rdlc" />
+    <EmbeddedResource Include="Report5.rdlc" />
+    <EmbeddedResource Include="Report6.rdlc" />
+    <EmbeddedResource Include="Report7.rdlc" />
+    <EmbeddedResource Include="Report8.rdlc" />
+    <EmbeddedResource Include="Report9.rdlc" />
+    <EmbeddedResource Include="reporttemp.resx">
+      <DependentUpon>reporttemp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reporttemp_new.resx">
+      <DependentUpon>reporttemp_new.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPMnew.resx">
+      <DependentUpon>RPMnew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPM_Report.resx">
+      <DependentUpon>RPM_Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_sbt_1_B.rdlc" />
+    <EmbeddedResource Include="ShiftChange.resx">
+      <DependentUpon>ShiftChange.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="DataSet28.xsc">
+      <DependentUpon>DataSet28.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet28.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet28.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet28.xss">
+      <DependentUpon>DataSet28.xsd</DependentUpon>
+    </None>
+    <None Include="lg_123.xsc">
+      <DependentUpon>lg_123.xsd</DependentUpon>
+    </None>
+    <None Include="lg_123.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>lg_123.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="lg_123.xss">
+      <DependentUpon>lg_123.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="ultimate_ele1DataSet.xsc">
+      <DependentUpon>ultimate_ele1DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ultimate_ele1DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ultimate_ele1DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ultimate_ele1DataSet.xss">
+      <DependentUpon>ultimate_ele1DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ultimate_eleDataSet.xsc">
+      <DependentUpon>ultimate_eleDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ultimate_eleDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ultimate_eleDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ultimate_eleDataSet.xss">
+      <DependentUpon>ultimate_eleDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ultimate_eleDataSet1.xsc">
+      <DependentUpon>ultimate_eleDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="ultimate_eleDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ultimate_eleDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ultimate_eleDataSet1.xss">
+      <DependentUpon>ultimate_eleDataSet1.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="file_search.png" />
+    <Content Include="final logo %282%29.jpg.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
