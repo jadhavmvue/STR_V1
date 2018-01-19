@@ -812,6 +812,7 @@ namespace WindowsFormsApplication1
                     Logger_File = resxSet.GetString("Logger_File");
                     Excel_Folder = resxSet.GetString("Excel_Folder");
                     Excel_Path = resxSet.GetString("Excel_Path_Tempareture");
+                    int a;
                 }
             }
             catch (Exception ex)
